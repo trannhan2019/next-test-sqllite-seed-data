@@ -1,37 +1,52 @@
 [
-    {
-      "ten": "Phòng Tổ chức - Hành chính",
-      "ten_viet_tat": "TCHC",
-      "so_thu_tu": 1
-    },
-    {
-      "ten": "Phòng Kinh tế - Kế hoạch",
-      "ten_viet_tat": "KTKH",
-      "so_thu_tu": 2
-    },
-    {
-      "ten": "Phòng Kỹ thuật cơ điện",
-      "ten_viet_tat": "KTCĐ",
-      "so_thu_tu":3
-    },
-    {
-      "ten": "Phòng Tài chính - Kế toán",
-      "ten_viet_tat": "TCKT",
-      "so_thu_tu": 4
-    },
-    {
-      "ten": "Trung tâm Tư vấn và Kiểm định an toàn đập",
-      "ten_viet_tat": "TTTV",
-      "so_thu_tu": 5
-    },
-    {
-      "ten": "Nhà máy thủy điện Khe Diên",
-      "ten_viet_tat": "NMKD",
-      "so_thu_tu": 6
-    },
-    {
-      "ten": "Nhà máy thủy điện Krông H'Năng",
-      "ten_viet_tat": "NMKN",
-      "so_thu_tu": 7
-    }
-  ]
+  {
+    "ten": "Hội đồng quản trị",
+    "ten_viet_tat": "HĐQT",
+    "so_thu_tu": 1
+  },
+  {
+    "ten": "Ban Kiểm soát",
+    "ten_viet_tat": "BKS",
+    "so_thu_tu": 2
+  },
+  {
+    "ten": "Ban Tổng giám đốc",
+    "ten_viet_tat": "B TGĐ",
+    "so_thu_tu": 3
+  },
+  {
+    "ten": "Phòng Tổ chức - Hành chính",
+    "ten_viet_tat": "TCHC",
+    "so_thu_tu": 4
+  },
+  {
+    "ten": "Phòng Kinh tế - Kế hoạch",
+    "ten_viet_tat": "KTKH",
+    "so_thu_tu": 5
+  },
+  {
+    "ten": "Phòng Kỹ thuật cơ điện",
+    "ten_viet_tat": "KTCĐ",
+    "so_thu_tu": 6
+  },
+  {
+    "ten": "Phòng Tài chính - Kế toán",
+    "ten_viet_tat": "TCKT",
+    "so_thu_tu": 7
+  },
+  {
+    "ten": "Trung tâm Tư vấn và Kiểm định an toàn đập",
+    "ten_viet_tat": "TTTV",
+    "so_thu_tu": 8
+  },
+  {
+    "ten": "Nhà máy thủy điện Khe Diên",
+    "ten_viet_tat": "NMKD",
+    "so_thu_tu": 9
+  },
+  {
+    "ten": "Nhà máy thủy điện Krông H'Năng",
+    "ten_viet_tat": "NMKN",
+    "so_thu_tu": 10
+  }
+]
