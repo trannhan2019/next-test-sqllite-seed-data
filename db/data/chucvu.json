@@ -1,0 +1,78 @@
+[
+    {
+      "ten": "Chủ tịch HĐQT",
+      "ten_viet_tat": "CT HĐQT"
+    },
+    {
+      "ten": "Thành viên HĐQT",
+      "ten_viet_tat": "TV HĐQT"
+    },
+    {
+      "ten": "Trưởng Ban Kiểm soát",
+      "ten_viet_tat": "T BKS"
+    },
+    {
+      "ten": "Thành viên Ban Kiểm soát",
+      "ten_viet_tat": "TV BKS"
+    },
+    {
+      "ten": "Tổng giám đốc",
+      "ten_viet_tat": "TGĐ"
+    },
+    {
+      "ten": "Phó Tổng giám đốc",
+      "ten_viet_tat": "P TGĐ"
+    },
+    {
+      "ten": "Kế toán trưởng",
+      "ten_viet_tat": "KTT"
+    },
+    {
+      "ten": "Giám đốc",
+      "ten_viet_tat": "GĐ"
+    },
+    {
+      "ten": "Trưởng phòng",
+      "ten_viet_tat": "TP"
+    },
+    {
+      "ten": "Phó giám đốc",
+      "ten_viet_tat": "PGĐ"
+    },
+    {
+      "ten": "Phóng Trưởng phòng",
+      "ten_viet_tat": "PTP"
+    },
+    {
+      "ten": "Thư ký TGĐ",
+      "ten_viet_tat": "TK TGĐ"
+    },
+    {
+      "ten": "Chuyên viên",
+      "ten_viet_tat": "CV"
+    },
+    {
+      "ten": "Nhân viên",
+      "ten_viet_tat": "NV"
+    },
+    {
+      "ten": "Quản đốc",
+      "ten_viet_tat": "QĐ"
+    },
+    {
+      "ten": "Phó quản đốc",
+      "ten_viet_tat": "PQĐ"
+    },
+    {
+      "ten": "Trưởng ca",
+      "ten_viet_tat": "Trưởng ca"
+    },
+    {
+      "ten": "Tổ trưởng",
+      "ten_viet_tat": "TT"
+    },
+    {
+      "ten": "Tổ phó",
+      "ten_viet_tat": "TP"
+    }
+  ]

@@ -19,4 +19,25 @@ model Phong {
   ten   String
   ten_viet_tat String
   so_thu_tu Int @default(0)
+  can_bo_nhan_vien CanBoNhanVien? 
+}
+
+model ChucVu {
+  id    Int    @id @default(autoincrement())
+  ten   String
+  ten_viet_tat String
+  can_bo_nhan_vien CanBoNhanVien?
+}
+
+model CanBoNhanVien {
+  id    Int    @id @default(autoincrement())
+  ten   String
+
+  phong_id Int @unique
+  phong Phong @relation(fields: [phong_id],references: [id])
+
+  chuc_vu_id Int @unique
+  chuc_vu ChucVu @relation(fields: [chuc_vu_id],references: [id])
+
+  so_thu_tu Int @default(0)
 }

@@ -20,18 +20,18 @@
     "so_thu_tu": 4
   },
   {
+    "ten": "Phòng Tài chính - Kế toán",
+    "ten_viet_tat": "TCKT",
+    "so_thu_tu": 5
+  },
+  {
     "ten": "Phòng Kinh tế - Kế hoạch",
     "ten_viet_tat": "KTKH",
-    "so_thu_tu": 5
+    "so_thu_tu": 6
   },
   {
     "ten": "Phòng Kỹ thuật cơ điện",
     "ten_viet_tat": "KTCĐ",
-    "so_thu_tu": 6
-  },
-  {
-    "ten": "Phòng Tài chính - Kế toán",
-    "ten_viet_tat": "TCKT",
     "so_thu_tu": 7
   },
   {

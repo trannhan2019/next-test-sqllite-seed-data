@@ -10,9 +10,13 @@ export default function DashboardLayout({
   return (
     <SidebarProvider>
       <AppSidebar />
-      <section className="w-full">
+      <section className="w-full flex flex-col h-screen">
         <AppHeader />
-        <main className="w-full bg-background p-3">{children}</main>
+        <main className="w-full bg-background p-3 flex-1">
+          <div className="border p-3 bg-background border-gray-200 rounded-md shadow-md h-full">
+            {children}
+          </div>
+        </main>
       </section>
     </SidebarProvider>
   );
