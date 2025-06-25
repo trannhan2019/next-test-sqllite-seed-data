@@ -23,9 +23,3 @@ CREATE TABLE "CanBoNhanVien" (
     CONSTRAINT "CanBoNhanVien_phong_id_fkey" FOREIGN KEY ("phong_id") REFERENCES "Phong" ("id") ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT "CanBoNhanVien_chuc_vu_id_fkey" FOREIGN KEY ("chuc_vu_id") REFERENCES "ChucVu" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
 );
-
--- CreateIndex
-CREATE UNIQUE INDEX "CanBoNhanVien_phong_id_key" ON "CanBoNhanVien"("phong_id");
-
--- CreateIndex
-CREATE UNIQUE INDEX "CanBoNhanVien_chuc_vu_id_key" ON "CanBoNhanVien"("chuc_vu_id");

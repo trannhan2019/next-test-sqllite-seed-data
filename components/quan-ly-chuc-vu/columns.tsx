@@ -1,19 +1,15 @@
 "use client"
  
-import { Phong } from "@/types/phong"
+import { ChucVu } from "@/types/chuc-vu"
 import { ColumnDef } from "@tanstack/react-table"
 
-export const columns: ColumnDef<Phong>[] = [
+export const ChucVuColumns: ColumnDef<ChucVu>[] = [
     {
       accessorKey: "ten",
-      header: "Tên phòng",
+      header: "Tên chức vụ",
     },
     {
       accessorKey: "ten_viet_tat",
       header: "Tên viết tắt",
-    },
-    {
-      accessorKey: "so_thu_tu",
-      header: "Số thứ tự",
     },
   ]

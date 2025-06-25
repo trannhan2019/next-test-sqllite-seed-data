@@ -1,5 +1,8 @@
+'use client';
+
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   Sidebar,
   SidebarContent,
@@ -15,7 +18,7 @@ import {
 // Menu items.
 const menuMainItems = [
   {
-    title: "Home",
+    title: "Theo dõi BHXH",
     url: "/",
     icon: Home,
   },
@@ -42,41 +45,36 @@ const menuMainItems = [
 ];
 
 const menuQLItems = [
-    {
-        title: "Quản lý phòng",
-        url: "/quan-ly-phong",
-        icon: Home,
-    },
-    {
-        title: "Quản lý nhân viên",
-        url: "/quan-ly-nhan-vien",
-        icon: Inbox,
-    },
-    {
-        title: "Calendar",
-        url: "#",
-        icon: Calendar,
-    },
-    {
-        title: "Search",
-        url: "#",
-        icon: Search,
-    },
-    {
-        title: "Settings",
-        url: "#",
-        icon: Settings,
-    },
+  {
+    title: "Quản lý CBNV",
+    url: "/quan-ly-cbnv",
+    icon: Inbox,
+  },
+  {
+    title: "Calendar",
+    url: "#",
+    icon: Calendar,
+  },
+  {
+    title: "Search",
+    url: "#",
+    icon: Search,
+  },
+  {
+    title: "Settings",
+    url: "#",
+    icon: Settings,
+  },
 ];
 
 export function AppSidebar() {
+  const pathname = usePathname();
+
   return (
     <Sidebar>
       <SidebarHeader className="gap-0">
-        <h4 className="text-xl font-semibold tracking-tight">
-          SBA - BHXH
-        </h4>
-        <p className="text-muted-foreground text-sm">
+        <h4 className="text-xl font-semibold tracking-tight text-center">SBA - BHXH</h4>
+        <p className="text-muted-foreground text-sm text-center">
           Phần mềm quản lý BHXH tại SBA
         </p>
       </SidebarHeader>
@@ -87,7 +85,7 @@ export function AppSidebar() {
             <SidebarMenu>
               {menuMainItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton asChild isActive={item.url === pathname}>
                     <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
@@ -104,7 +102,7 @@ export function AppSidebar() {
             <SidebarMenu>
               {menuQLItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton asChild isActive={item.url === pathname}>
                     <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>

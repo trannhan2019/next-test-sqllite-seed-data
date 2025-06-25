@@ -1,5 +1,5 @@
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { UserIcon } from "lucide-react";
+
 
 export function AppHeader() {
     return (
