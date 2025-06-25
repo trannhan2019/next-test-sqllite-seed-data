@@ -1,17 +1,31 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 import { getManyPhong } from "@/actions/phong";
 import { PhongColumns } from "@/components/quan-ly-phong/columns";
-import { PhongDataTable } from "@/components/quan-ly-phong/data-table";
 import { getManyChucVu } from "@/actions/chuc-vu";
 import { ChucVuColumns } from "@/components/quan-ly-chuc-vu/columns";
-import { ChucVuDataTable } from "@/components/quan-ly-chuc-vu/data-table";
 import { CBNVDataTable } from "@/components/quan-ly-cbnv/data-table";
+import { CBNVColumns } from "@/components/quan-ly-cbnv/columns";
+import { getManyCBNV } from "@/actions/cbnv";
+import { searchParams } from "@/types/common";
+import { DataTableNoPagination } from "@/components/common/data-table";
 
-export default async function QuanLyCBNV() {
+export default async function QuanLyCBNV({
+  searchParams,
+}: {
+  searchParams: searchParams;
+}) {
+  // Lấy các tham số phân trang từ searchParams
+  const { page, pageSize } = await searchParams;
+  const pageParam = parseInt(page || "1", 10);
+  const pageSizeParam = parseInt(pageSize || "10", 10);
+  // Lấy dữ liệu từ các action
   const dataPhong = await getManyPhong();
   const dataChucVu = await getManyChucVu();
-console.log(dataPhong)
+  const { data: dataCBNV, total } = await getManyCBNV({
+    page: pageParam,
+    pageSize: pageSizeParam,
+  });
 
   return (
     <Tabs defaultValue="quan-ly-cbnv">
@@ -23,13 +37,13 @@ console.log(dataPhong)
         <TabsTrigger value="quan-ly-chuc-vu">Quản lý Chức vụ</TabsTrigger>
       </TabsList>
       <TabsContent value="quan-ly-cbnv">
-        <CBNVDataTable data={dataPhong} />
+        <CBNVDataTable data={dataCBNV} total={total} columns={CBNVColumns} />
       </TabsContent>
       <TabsContent value="quan-ly-phong">
-        <PhongDataTable columns={PhongColumns} data={dataPhong} />
+        <DataTableNoPagination columns={PhongColumns} data={dataPhong} />
       </TabsContent>
       <TabsContent value="quan-ly-chuc-vu">
-        <ChucVuDataTable columns={ChucVuColumns} data={dataChucVu} />
+        <DataTableNoPagination columns={ChucVuColumns} data={dataChucVu} />
       </TabsContent>
     </Tabs>
   );
